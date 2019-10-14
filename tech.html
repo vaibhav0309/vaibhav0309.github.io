@@ -1,0 +1,189 @@
+<!doctype html>
+
+<html>
+
+<head>
+
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+           <style type="text/css">
+
+
+           a:link{
+
+           	      color: green;
+           	      text-decoration: none;   /* four state of link */
+                 }
+           
+           a:visited{
+                      color: maroon;
+
+                    }  
+          
+           a:hover{
+
+           	      background-color: red;
+           	      color:white;
+           	      text-decoration: underline;  /* optional */
+                  }  
+           
+           a:active{
+           	       background: green; /* when clicked colour changes of the link */
+                   }                  
+
+           body
+                {
+                	color: black;
+                    background: silver;
+                    background-image: url(photo.jpg);
+                    background-repeat: no-repeat;
+                    background-position: 55% 130px;
+                }
+              a
+                {
+                   font-family: arial;
+                   color: yellow;
+                }	
+             h1
+                {
+                	font-weight: bold;
+                	font-family: arial;
+                	text-align: center;
+                	background-color: silver;
+                	padding-left: 00px;
+                	padding-right: 00px;
+                	border: 5px solid black;
+
+                }  
+              p
+                {
+                   font-family: arial;
+                   font-size:150%;
+                   background-color: orange; 
+                   width: 400px;     /* fix width of paragraph */
+                   margin: 20px;    /*make space all around paragraph */
+                   padding: 30px;  /*to make distance of text from border*/
+                   text-indent: 30px;   /*to move paragraph first line */
+
+                }  
+
+          table {
+                   background: white;
+                   border: 3px solid green; /* order must be maintained */
+                   margin: 50px;
+                   font-family: arial;
+                   font-size: 150%;
+                   text-align: center;
+                   padding-right: 00px;
+
+                }  
+
+             tr {
+                   background: pink;
+
+                }  
+
+             td {
+                 border: 2px solid red;
+
+                }   
+             th {
+                  background: green;
+                
+                } 
+           </style>
+ 
+           <title> technothlon </title>
+</head>
+
+<body >
+
+	<script type="text/javascript">
+		function sid() {
+			alert("Welcome to Technothlon!!!!");
+		}
+		
+		
+	</script>
+  <div class="ding"><img src="te.png" height="50" align="center" /></div>
+	
+	
+		<hr >
+
+		<a href="http://technothlon.techniche.org/" title="technothlon" onclick="sid()" >HOME</a><br>
+		<a href="http://technothlon.techniche.org/register" title="welcome" target="_blank">REGISTRATION</a><br>
+		<a href="http://www.google.com" title="search">GOOGLE</a><br>
+		<marquee>  <h1> TECHNOTHLON</h1> </marquee>
+    <table border=1><tr> <td id="write"> Hey </td></tr></table>
+
+      
+
+
+		<p >Technothlon is an international school championship organized by the student fraternity of IIT Guwahati. Technothlon began in 2004 in a small room with an aim to "Inspire Young Minds". Starting on our journey with a participation of 200 students confined to the city of Guwahati, over the past 14 years we have expanded our reach to over 400 cities all over India and various centers abroad. The championship is organized over 2 rounds:</p>
+
+		<p> The members can be from same class or different class. For example: a team consisting of one member from class IX and other from class X is perfectly acceptable for Junior squad. The basic requirements for team formation are they should consist exactly two members from the same squad and the same institution.</p>
+<script>
+
+$( document ).ready(function() {
+ 
+    alert("welcome");
+ 
+});
+
+
+
+  $("p").hide();
+  
+
+  $( document ).ready(function() {
+ 
+    $( "img" ).click(function( event ) {
+ 
+        $( "p" ).fadeIn( 1000 );
+
+ 
+    });
+});
+
+  $( document ).ready(function() {
+ 
+    $( "img" ).mouseleave(function( event ) {
+ 
+        $( "img" ).fadeOut( 10000 );
+
+ 
+    });
+});
+  $( document ).ready(function() {
+ 
+    $(  ).click(function( event ) {
+ 
+        alert( "Thanks for visiting!" );
+ 
+    });
+ 
+});
+  var save=document.getElementById("write");
+  var x,y;
+  document.onmousemove= function Write(e){
+   x=e.clientX; //gives coords wrt image? CHeck: NOPE, wrt doc.
+   y=e.clientY;
+  save.textContent="X: "+ x+" Y: "+y;  //doubt** update imediately..
+  if(x===00 && y===0)
+  {
+    $( document ).ready(function() {
+ 
+    $("#techno" ).click(function( event ) {
+ 
+        alert( "Thanks for visiting!" );
+ 
+    });
+ 
+});
+  }
+  }
+</script>
+
+
+		
+</body>
+</html>
